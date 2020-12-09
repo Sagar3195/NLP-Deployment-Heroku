@@ -13,7 +13,7 @@ def home():
     return render_template('home.html')
 
 @app.route('/predict', methods =['POST'])
-def result():
+def predict():
     if request.method == 'POST':
         message = request.form['message']
         data = [message]
